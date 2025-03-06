@@ -1,11 +1,11 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
-    pyYAML \
+    #pyYAML \
     python3.10 \
-    #python3-pip \
-    git 
-    #libyaml-dev # adding this dependency
+    python3-pip \
+    git \
+    libyaml-dev # adding this dependency
 
 RUN pip3 install pyYAML
 
