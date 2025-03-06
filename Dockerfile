@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
     python3.10 \
     python3-pip \
     git \
-    libyaml-dev
+    libyaml-dev # adding this dependency
 
 RUN pip3 install pyYAML
 
